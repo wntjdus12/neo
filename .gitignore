@@ -10,3 +10,10 @@ c/*.o
 !c/**/lib/*.a
 !c/**/lib/*.h
 !c/**/Makefile*
+
+#Java
+**/*.class
+
+# Scala
+scala/**/project
+scala/**/target
