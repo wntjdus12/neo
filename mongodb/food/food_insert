@@ -1,4 +1,3 @@
-use test
 db.food.drop()
 db.food.insert({
     "fruit":[
