@@ -25,6 +25,7 @@ maven/**/target
 node/**/node_modules
 node/**/package-lock.json
 
+
 ## python 
 python /**/.venv
 python/**/__pycache__/
@@ -36,3 +37,5 @@ mongodb/backup
 oracle/node/dbConfig.js
 oracle/**/node_modules
 oracle/**/package-lock.json
+
+
