@@ -7,7 +7,7 @@ from typing import Optional
 
 app = FastAPI()
 
-base_url = 'http://192.168.1.34:5000/users'
+base_url = 'http://192.168.1.15:5000/users'
 
 @app.get(path='/')
 async def healthCheck():
@@ -21,8 +21,9 @@ async def getUsers():
 @app.post(path='/users')
 async def postUsers(id:str, name: str):
     data = dict(id=id, name=name)
-    response = requests.get(base_url, json=data)
+    response = requests.post(base_url, json=data)
     return response.json()
+
 @app.get(path='/users/params1')
 async def user_params(id:Union[str, None] = None, name:Union[str, None] = None):
     if (id is None) and (name is None):
