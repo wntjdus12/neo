@@ -21,13 +21,13 @@ scala/**/target
 ##Maven
 maven/**/target
 
-## nodejs
+##nodejs
 node/**/node_modules
 node/**/package-lock.json
 
 
 ## python 
-python /**/.venv
+python/**/.venv
 python/**/__pycache__/
 
 ## mongodb
