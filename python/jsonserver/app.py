@@ -83,7 +83,7 @@ async def users_param(id: str):
         except ValueError: 
             raise HTTPException(status_code=500, detail="Invalid JSON response from server")
         return data
-        
+
     except requests.exceptions.RequestException:
         raise HTTPException(status_code=500, detail="Request failed")
     
