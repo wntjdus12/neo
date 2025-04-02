@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        let rsp_map = {1: "가위", 2: "바위", 3: "보"};
+        let user = prompt("1~3 사이의 숫자를 입력하세요.(1: 가위, 2:바위, 3:보)");
+        user = parseInt(user);
+        if ( user == 1 || user == 2 || user == 3) {
+            let com = Math.floor(Math.random() * 3 + 1);
+            verdict = user - com;
+            document.write("User : " + rsp_map[user] + " vs Computer : " + rsp_map[com] + "<br>");
+            if (verdict == -2 || verdict == 1) {
+                document.write("User Win.<br>");
+            } else if (verdict == 2 || verdict == -1) {
+                document.write("Computer Win.<br>");
+            } else {
+                document.write("Draw.<br>");
+            }
+    
+        } else {
+            alert("1~3 사이의 숫자를 입력해줘");
+        }
+
+
+        
+
+    </script>
+    
+</body>
+</html>

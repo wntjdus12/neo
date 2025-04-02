@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>While문을 이용해서 달력 출력</h1>
+    <hr>
+    <script>
+        let n = prompt("원하는 달의 일수를 입력하세요.(28, 30, 31 중 택일)", 0);
+        
+        while (n != 28 && n != 30 && n != 31) {
+            n = alert("28, 30, 31 중 택일을 입력해줘");
+            break;
+        }
+        if(n != 28 && n != 30 && n != 31) {
+            n = prompt("원하는 달의 일수를 입력하세요.(28, 30, 31 중 택일)", 0);
+        }
+        
+        
+        document.write("Sun Mon Tue Wed Thu Fri Sat<br>");
+        let day = 1;
+        
+        while (day <= n) {
+            document.write(day + " ");
+            
+            if( day < 8) {
+                document.write("&nbsp;");
+            }
+            if( day < 31) {
+                document.write("&nbsp;&nbsp;");
+            }
+        
+            if (day % 7 === 0) {
+                document.write("<br>");
+            }
+            day++;
+        }
+    </script>
+</body>
+</html>

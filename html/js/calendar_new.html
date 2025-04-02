@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-bottom: 5px;
+        }
+        hr {
+            width: 50%;
+        }
+        .calendar {
+            display: inline-block;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .calendar td:hover {
+            background-color: aquamarine;
+
+        }
+        .calendar th, .calendar td {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #6ab8dd;
+            font-size: 18px;
+        }
+        .calendar th {
+            background-color: #a9c5de;
+            font-weight: bold;
+        }
+        .calendar td {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>📅 Calendar</h1>
+    <hr>
+    <div id="calendarContainer"></div>
+
+    <script>
+        let input = prompt("원하는 년도와 달을 입력하세요.(예 : 202504)", "202504");
+        let year = parseInt(input.slice(0, 4));
+        let month = parseInt(input.slice(4, 6));
+
+        let firstDay = new Date(year, month - 1, 1).getDay();
+        let lastDate = new Date(year, month, 0).getDate();
+
+        let html = `<h2>${year}년 ${month}월</h2>`;
+        html += "<table class='calendar'>";
+        html += "<tr><th style='color:red'>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th style='color:blue'>Sat</th></tr>";
+
+        let day = 1;
+        html += "<tr>";
+
+        for (let i = 0; i < firstDay; i++) {
+            html += "<td></td>"; 
+        }
+
+        for (let i = firstDay; i < 7; i++) {
+            html += `<td>${day}</td>`;
+            day++;
+        }
+        html += "</tr>";
+
+        while (day <= lastDate) {
+            html += "<tr>";
+            for (let i = 0; i < 7 && day <= lastDate; i++) {
+                html += `<td>${day}</td>`;
+                day++;
+            }
+            html += "</tr>";
+        }
+
+        html += "</table>";
+        document.getElementById("calendarContainer").innerHTML = html;
+    </script>
+</body>
+</html>
