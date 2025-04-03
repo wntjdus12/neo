@@ -17,7 +17,7 @@
         }
         .calendar {
             display: inline-block;
-            border-collapse: collapse;
+            border-collapse: collapse;  /*table의 테두리를 겹치지 않게 하나로 합쳐줌 */
             margin-top: 10px;
         }
         .calendar td:hover {
@@ -28,13 +28,12 @@
             width: 40px;
             height: 40px;
             text-align: center;
-            vertical-align: middle;
+            vertical-align: middle; /*달력의 날짜가 셀의 정중앙에 위치*/
             border: 1px solid #6ab8dd;
             font-size: 18px;
         }
         .calendar th {
             background-color: #a9c5de;
-            font-weight: bold;
         }
         .calendar td {
             background-color: #fff;

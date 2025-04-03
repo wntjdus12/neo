@@ -20,14 +20,14 @@
         let i = 1;
         while(i <= endDay + startDay) {
             if(i <= startDay) 
-                document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+                document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
             else if ( i - startDay < 10) 
                 document.write(
                     "&nbsp;&nbsp;&nbsp;" +
                     (i - startDay) + 
-                    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+                    "&nbsp;&nbsp;&nbsp;"
             );
-            else document.write(i - startDay + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+            else document.write(i - startDay + "&nbsp;&nbsp;&nbsp;&nbsp;");
             if ( i % 7 == 0 ) document.write("<br>");
             i++;
         }
