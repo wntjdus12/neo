@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>가위바위보 게임</title>
+</head>
+<body>
+
+  <h2>가위바위보 게임</h2>
+  <hr />
+  <form onsubmit="return false;">
+    <input type="radio" name="rps" id="scissors" value="1" /> 가위
+    <input type="radio" name="rps" id="rock" value="2" /> 바위
+    <input type="radio" name="rps" id="paper" value="3" /> 보
+    <p>
+      <button type="button" onclick="playGame()">Game Go</button>
+    </p>
+  </form>
+
+  <script>
+    function playGame() {
+      const choices = ["가위", "바위", "보"];
+      const userChoice = document.querySelector('input[name="rps"]:checked');
+
+      if (!userChoice) {
+        alert("선택해주세요!");
+        return;
+      }
+
+      const player = parseInt(userChoice.value);
+      const computer = Math.floor(Math.random() * 3) + 1;
+
+      let result = "";
+      if (player === computer) {
+        result = "무승부!";
+      } else if (
+        (player === 1 && computer === 3) ||
+        (player === 2 && computer === 1) ||
+        (player === 3 && computer === 2)
+      ) {
+        result = "당신이 이겼습니다!";
+      } else {
+        result = "컴퓨터가 이겼습니다!";
+      }
+
+      alert(
+        `User: ${choices[player - 1]} vs Computer: ${choices[computer - 1]}\n결과: ${result}`
+      );
+
+      // 선택 초기화
+      userChoice.checked = false;
+    }
+  </script>
+
+</body>
+</html>
