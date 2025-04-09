@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
 import threading, time
+from random import sample
+
 
 class Sample(threading.Thread):
     def __init__(self, time):
@@ -23,7 +25,3 @@ t2.join()
 print("t2.join() has finished.")
 t1.join()
 print("t1.join() has finished.")
-
-
-
-

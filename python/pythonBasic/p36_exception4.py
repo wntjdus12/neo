@@ -2,12 +2,12 @@
 
 def division_function(a, b):
     try:
-        print(a / b)
-    except TypeError as e:
-        print('First')
-    except ZeroDivisionError as e:
-        print('Second')
+        print(a/b)
     except Exception as e:
+        print('First')
+    except TypeError as e:
+        print('Second')
+    except ZeroDivisionError as e:
         print('Third')
 
 division_function("a", 1)

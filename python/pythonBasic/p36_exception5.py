@@ -2,23 +2,14 @@
 
 def division_function(a, b):
     try:
-        print(a / b)
+        print(a/b)
     except TypeError as e:
-        return -1
+        print('First')
     except ZeroDivisionError as e:
-        return -2
+        print('Second')
     except Exception as e:
-        return -3
+        print('Third')
 
-
-ret = division_function("a", 1)
-print(ret)
-ret = division_function(1, 0)
-print(ret)
-ret = division_function(4, 2)
-print(ret)
-
-if ret != None:
-    print('Error')
-else:
-    print(ret)
+division_function("a", 1)
+division_function(1, 0)
+division_function(4, 2)

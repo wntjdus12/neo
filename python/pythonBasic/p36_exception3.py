@@ -2,7 +2,7 @@
 
 def division_function(a, b):
     try:
-        print(a / b)
+        print(a/b)
     except TypeError as e:
         print(e)
     except ZeroDivisionError as e:
