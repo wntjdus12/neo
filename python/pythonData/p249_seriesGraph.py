@@ -10,7 +10,7 @@ myindex = ['강감찬', '김유신', '이순신', '안익태', '윤동주', '홍
 
 print(myindex)
 print(mylist)
-print('-'*50)
+print('-' * 50)
 
 myseries = Series(data=mylist, index=myindex)
 myylim = [0, myseries.max() + 10]
