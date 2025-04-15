@@ -16,7 +16,7 @@ word = 'selenium'
 search_textbook.send_keys(word)
 search_textbook.submit()
 
-wait = 3
+wait = 30
 print(str(wait) + ' seconds later...')
 time.sleep(wait)
 
@@ -24,7 +24,7 @@ imagefile = 'p368_selenium.png'
 driver.save_screenshot(imagefile)
 print(imagefile + ' saved')
 
-wait = 3
+wait = 30
 driver.implicitly_wait(wait)
 
 driver.quit()
