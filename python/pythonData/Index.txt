@@ -1,0 +1,442 @@
+[Index]
+
+———————————————
+Day-01
+
+- 회원가입 &설치 프로그램 리스트
+- Virtualbox Ubuntu
+- WSL2 & docker 설치 및 설정 - Windows 전용
+- github Token 인증
+- Ubuntu Installation
+- Linux Partitioning
+- Ubuntu 초기 설정 
+- Github에 neo repository 생성
+- github in ubuntu
+- Ubuntu 종료
+———————————————
+Day-02
+
+- IP Address
+- Ubuntu 설정 - cont.
+- Well-known port
+- Install openssh-server
+- ssh configuration - Windows terminal
+- ssh 비밀번호 없이 접속하는 법
+- Vscode 열어서 Extensions 설치
+- Linux version explain 
+- Linux vs Ms Windows Kernel
+- timezone 설정
+———————————————
+Day-03
+
+- file
+- /etc/passwd 파일
+- Linux Passwd 정책
+- Linux file time
+- 파일시스템의 구성요소
+- hard link vs symbolic link
+- First C Programming
+- 명령어 실행 사이클
+- vi 편집기
+———————————————
+Day-04
+
+- Shell
+- 쉘 변수 vs 환경 변수
+- C variable life scope
+- File 접근 권한
+- 특수 접근 권한
+- Process
+- readhat vs debian init
+- 국제 표준 기구
+- Process priority
+- nice vs renice
+- 작업 예약 
+- at
+- cron
+- Filesystem 관리
+- Filesystem의 구성요소
+- Filesystem 추가 방법 : Legacy
+
+———————————————
+Day-05
+
+- Filesystem 추가 방법 : Legacy (cont.)
+- Filesystem 추가 방법 : LVM
+- LVM 삭제 방법
+- LVM 복습
+- LVM resize
+- Linux RAID
+- raid 1+0
+
+———————————————
+Day-06
+
+- Disk 복제 방법
+- Disk 데이터 삭제
+- Disk, Disk partion table 초기화
+- LVM over RAID
+- 파일 시스템 추가방법 : Legacy
+- 파일 시스템 추가방법 : LVM
+- 파일 시스템 추가방법 : RAID(mdadm)
+- LVM over RAID
+- 파일 시스템 추가방법 : ZFS
+- zfs 1+0
+- Virutalbox CentOS 8 설치 - boot iso 이용
+———————————————
+Day-07
+
+- Booting과 종료
+- X11 window manager(x-widnows)
+- inetd vs stand-alone
+- Linux 종료 프로세스
+- Linux Recovery method
+- 소프트웨어 관리하기 - Ubuntu
+- 소프트웨어 관리하기 - Ubuntu (dpkg)
+- 사용자가 직접 주소를 검색해서 사용하는 경우
+- 수세리눅스 패키지 명령어
+- 배포판 별 패키지 관리 도구 : binary
+- 소프트웨어 관리하기 - CentOS (RPM)
+- 소프트웨어 관리하기 - CentOS (yum)
+- 소프트웨어 관리하기 - Ubuntu (aptitude)
+- 소프트웨어 관리하기 - Ubuntu (snap)
+- 소프트웨어 관리하기 - CentOS (snap)
+- tar archive == (jar archive)
+- 압축
+- Source installation
+- Linux C Programming
+———————————————
+Day-08
+
+- even / odd library
+- make
+- Endian Check
+- Java jdk Install - jdk 1.8
+- Java Test
+- Java jdk install - CentOS9
+- git push WARNING message 제거 : CentOS
+- Java jdk Install - jdk 1.8 - CentOS
+- chrhonyd 설정
+- Prime number library
+- 사용자 관리
+———————————————
+Day-09
+
+- 사용자 정보 관리 명령
+-디스크 Quata - CentOS
+- sed (stream editor)
+- awk
+- Shell Script
+———————————————
+Day-10
+
+- Shell Script (cont.)
+- cut command
+- paste command
+- string scope...
+- split command
+- diff / patch command
+- 네트워크
+- IPv4(32bit)
+- 슈퍼넷/서브넷
+- IPv6(128bit)
+- telnet
+- 서비스 데몬 구동 방식
+- ftp
+- vnc
+- Database - mariadb in the CentOS
+- mariadb 외부 접속 허용 - Workbench
+- WebServer - httpd in the CentOS
+———————————————
+Day-11
+
+- gnuboard5 
+- NFS - CentOS
+- 보안
+- Mail Service
+- Mysql - Ubuntu
+- apache2 - Ubuntu
+- NGINX install - Ubuntu
+- NGINX  - CentOS
+- SWAP file
+———————————————
+Day-12
+
+- Oracle XE Install - CentOS
+- Oracle-xe 재설치 하는 방법
+- oracle 외부 접속 허용
+- Oracle XE Install - Ubuntu
+- Oracle SQL
+- SQL
+———————————————
+Day-13
+
+- shell script (input_double_number)
+- Oracle Backup and Restore
+- CSV 데이터 가져오기
+- Select Query
+- Command line에서 SQL 실행하는 방법
+———————————————
+Day-14
+
+- hr.bigEmployees csv import
+- CTE (Common Table Expression)
+- Insert Query
+- update Query
+- update Query
+- merge
+- pl/sql
+- 묵시적 캐스팅
+- 수학관련 함수
+- 형 변환 함수
+- ETC
+- pivotTest
+———————————————
+Day-15
+
+- CLOB, BLOB 
+- neotbl - random
+- Inner Join
+- Multi Table Join
+- Outer Join
+- Cross Join
+- Self Join
+- union / union all / not in /in
+- pl/sql Programming…
+- 예외 처리
+- 사용자 정의 예외 처리
+- 데이터가 없는 경우
+- 동적 SQL
+- NodeJS - CentOS
+- NVM & NodeJS - Centos, Ubuntu
+- Python - Centos, Ubuntu
+- SBT - CentOS
+- scala - Centos, Ubuntu
+- SBT - Ubuntu
+- Maven - CentOS, Ubuntu
+- Redis - CentOS
+- NodeJS Express
+———————————————
+Day-16
+
+- Python Bottle
+- Python Fast API (venv 환경)
+- ruby install - use apt
+- ruby install - use rvm
+- MongoDB Install - Ubuntu
+- MongoDB Atlas
+- Atlas Admin API
+- MongoDB
+- collection 생성 - ver1, Capped collection
+- collection 생성 - ver2
+- mongo import
+———————————————
+Day-17
+
+- Ubuntu 배포판 버전 확인
+- MongoDB 인증 - Ubuntu
+- MongoDB 인증 해제 - Ubuntu
+- capped collection Test
+- GridFS
+- mongodb admin command
+- mongodb link
+- N : M 관계
+- 계층형 관계
+- 상속 관계
+- Ruby for Mongodb
+- install ruby-3.2.7
+- Sharding System - 준비단계
+———————————————
+Day-18
+
+- Sharding System
+- Shard server setting
+- Shard daemon start/stop scripts
+- MongoDB Backup and Recovery
+- ReplicaSet
+———————————————
+Day-19
+
+- Nodejs for Oracle Database
+- Nodejs for mysql
+- sysnc-mysql
+- MVC Model
+- sync-mysql-web version
+- sync-mysql-web-dw version
+———————————————
+Day-20
+
+- mysql2
+- mysql2 - Web version
+- mysql2-web-dw version
+- nodejs for mongodb
+- mongoose module
+- JSON server
+- nodejs json-server
+- python json-server
+- CORS error
+- Union vs Optional Typing
+
+———————————————
+Day-21
+
+- REST API
+- RESTful API
+- HTML
+———————————————
+Day-22
+
+- CSS
+- JavaScript
+- Calendar 만들기
+———————————————
+Day-23
+
+- input() function
+- 리터럴 표기법으로 Book 객체 만들기
+- Object Type으로 Book 객체 만들기
+
+———————————————
+Day-24
+
+- Cookie
+- mysql - nodejs user authentication
+- main.js login, register api 제작
+- 모든 html파일에 CSS 추가
+- login & register exception
+- a tag에서 onclick을 사용하고 싶을 때
+- final version
+
+———————————————
+Day-25
+
+- DOM 객체를 이용한 동적 스타일 변경(toggle)
+- 웹 워커
+
+———————————————
+Day-26
+
+- request
+- http request 
+- axios request
+- pythonBasic
+
+———————————————
+Day-27
+
+- pythonBasic(cont.)
+
+———————————————
+Day-28
+
+- pythonBasic(cont.)
+- Python 데이터 분석
+- numpy
+
+———————————————
+Day-29
+
+- pandas
+- matplotlib
+
+———————————————
+Day-30
+
+- 크롤링
+- urllib
+- regular Expression
+- Beautiful Soup
+- 영화 순위 크롤링 
+
+
+———————————————
+Day-31
+
+- selenium
+- ChromeDirver 설치 방법 - Ubuntu Linux
+- folium
+- geocoding
+
+———————————————
+Day-32
+
+- wordcloud
+- KoNLpy
+- cx-Oracle
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+Day-
+
+———————————————
+
+
+
