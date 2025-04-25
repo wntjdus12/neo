@@ -45,3 +45,5 @@ oracle/**/package-lock.json
 project1
 
 
+**/node_modules
+**/package*
