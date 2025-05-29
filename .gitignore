@@ -33,6 +33,8 @@ secret.json
 **/.venv
 **/__pycache__/
 **/secret.json
+**/*.mp3
+**/*.mp4
 
 ## mongodb
 mongodb/backup
@@ -54,4 +56,6 @@ project1
 **/package*
 
 nestjs
+
+
 
