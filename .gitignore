@@ -36,6 +36,13 @@ secret.json
 **/*.mp3
 **/*.mp4
 
+**/model.safetensors
+**/llama.cpp
+**/*.gguf
+**/traning_data
+**/sft.json
+**/finetuned-*
+
 ## mongodb
 mongodb/backup
 
@@ -56,6 +63,7 @@ project1
 **/package*
 
 nestjs
+
 
 
 
